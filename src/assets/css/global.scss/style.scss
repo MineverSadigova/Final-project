@@ -1,0 +1,257 @@
+// Font family
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+
+// Color
+$body_color: #FAFAFA;
+$header_textcolor: #131313;
+
+body {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    background-color: $body_color;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: unset;
+}
+
+li {
+    list-style: none;
+}
+
+.custom_container {
+    padding: 30px;
+}
+
+.mobileImg {
+    img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .desktopImg {
+        display: none;
+    }
+
+    .mobileImg {
+        img {
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+}
+
+//Header
+
+.header-common {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    // padding: 10px 20px;
+    transition: 0.3s all;
+    background: $body_color;
+    height: 100px;
+}
+
+.header-links-pr {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    a {
+        color: #131313;
+        font-size: 15px;
+        line-height: 19px;
+        text-decoration: none;
+
+    }
+}
+
+.header-logo-pr {
+    display: flex;
+
+    img {
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+    }
+}
+
+.header-languages-pr {
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 5rem;
+    }
+
+    a {
+        color: #131313;
+        font-size: 15px;
+        line-height: 19px;
+        margin-right: 0.5rem;
+        text-decoration: none;
+
+    }
+
+    .link-a {
+        color: #CACACA;
+
+    }
+}
+
+
+//Footer
+
+.footerSlayd {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.2rem;
+}
+
+.footerElaqe {
+    a {
+        text-decoration: none;
+    }
+
+    display: flex;
+}
+
+.footerInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 30px;
+
+    p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #979797;
+    }
+
+    a {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #979797;
+    }
+}
+
+.footerBox {
+    width: 100%;
+    background: #131313;
+    margin-top: 80px;
+}
+
+
+.footerNummber {
+    padding: 20px;
+
+    p {
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 64px;
+        color: #FAFAFA;
+        border-top: 1px solid #FAFAFA;
+        border-bottom: 1px solid #FAFAFA;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .footerSlayd {
+        width: 390px;
+        flex-wrap: wrap;
+
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footerLogo img {
+        width: 80px;
+    }
+
+    .footerNummber {
+        p {
+            font-size: 25px;
+        }
+    }
+
+    .footerElaqe {
+        display: block;
+    }
+
+    .header-common {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: var(--header-height);
+        margin: 1rem;
+    }
+
+    .nav__logo {
+        color: var(--first-color);
+        transition: color 0.4s;
+        font-size: var(--h2-font-size);
+        font-family: var(--second-font);
+    }
+
+    .nav__toggle,
+    .nav__close {
+        font-size: 1.5rem;
+        color: var(--title-color);
+        cursor: pointer;
+    }
+
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+
+    .nav__link {
+        color: var(--title-color);
+        font-weight: var(--font-semi-bold);
+        transition: color 0.4s;
+    }
+
+    .nav__link:hover {
+        color: var(--first-color);
+    }
+
+    .nav__close {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+    }
+
+    .show-menu {
+        right: 0;
+    }
+}

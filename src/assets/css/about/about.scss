@@ -1,0 +1,157 @@
+.aboutSection{
+    padding: 50px;
+    margin-top: 100px;
+    h1{
+font-size: 50px;
+font-weight: 500;
+line-height: 57px;
+    }
+
+    p{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+    }
+}
+
+.section-ab1{
+    h1{
+        padding-bottom: 80px;
+    }
+
+    p{
+        padding: 20px 0;
+    }
+}
+
+.section-ab2{
+    margin-top: 80px;
+    .number-ab{
+        border-right: 1px solid #ccc;
+        padding: 0 20px;
+        &:last-child{
+            border-right: none;
+        }
+    }
+   .companyBorder{
+    border-right: 1px solid #ccc;
+   }
+
+}
+.company{
+    font-size: 30px !important;
+    font-weight: 500;
+    line-height: 45px;
+    padding: 50px !important;
+}
+
+
+
+
+.number-ab {
+    position: relative;
+    h1 {
+        font-size: 150px;
+        font-weight: 400;
+        line-height: 172px;
+    }
+
+  
+}
+
+.ab-center {
+    position: absolute;
+    right: 100%;
+    top: 0;
+    z-index: 100;
+    height: 1px;
+    width: 100%;
+    transform: rotate(90deg) translate(50%, 50%);
+    background-color: #1B1B1B;
+}
+
+
+
+.section-ab3{
+    display: flex;
+    gap: 20px ;
+    margin-top: 80px;
+}
+
+.vision{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section-ab4{
+    display: flex;
+    gap: 20px ;
+    margin: 80px 0;
+}
+
+@media screen and (max-width: 391px) {
+    .aboutSection {
+    padding: 30px;
+    margin-top: 50px;
+    }
+    .aboutSection h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    .aboutSection img{
+        width: 300px;
+    }
+    
+    .aboutSection p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    .section-ab1 {
+        h1{
+            padding-bottom: 40px;
+        }
+       
+    }
+    
+    .section-ab1 p {
+        padding: 10px 0;
+    }
+    
+    .section-ab2 {
+        margin-top: 40px;
+       
+    }
+    .number-ab, .companyBorder {
+        border-right: unset !important;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .company {
+        font-size: 24px !important;
+        line-height: 36px;
+        padding: 30px !important;
+    }
+    
+    
+    .number-ab h1 {
+        font-size: 100px;
+        line-height: 114px;
+    }
+    
+    .ab-center {
+        display: none;
+    }
+    
+    .section-ab3,
+    .section-ab4 {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 40px;
+    }
+    
+    .vision {
+        gap: 20px;
+    }
+}
